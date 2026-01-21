@@ -11,9 +11,8 @@ A clean and intuitive to-do list application built with vanilla JavaScript, HTML
 - **Responsive Design** - Works seamlessly on desktop and mobile devices
 - **Beautiful UI** - Modern gradient background with smooth animations
 
-## Screenshots
-
-![To-Do List Interface](screenshot.png) *(Add your screenshot here)*
+## Live Demo
+https://najamulhuda.github.io/To-do-List/
 
 ## Technologies Used
 
