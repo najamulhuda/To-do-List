@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(assets/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    color: #555;
+    background-image: url(assets/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeefe;
+}
+
+
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .todo-app {
+        max-width: 90%;
+        padding: 30px 20px 50px;
+        margin: 15px auto;
+    }
+
+    .todo-app h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .todo-app h2 img {
+        width: 25px;
+    }
+
+    button {
+        padding: 14px 40px;
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px 45px 12px 45px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .todo-app {
+        max-width: 95%;
+        padding: 25px 15px 40px;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    .todo-app h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .todo-app h2 img {
+        width: 22px;
+        margin-left: 8px;
+    }
+
+    .row {
+        padding-left: 15px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 40px 10px 40px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+        left: 6px;
+    }
+
+    ul li span {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
+        top: 7px;
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+    .todo-app {
+        padding: 20px 12px 35px;
+    }
+
+    .todo-app h2 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 8px 35px 8px 35px;
+    }
+
+    ul li::before {
+        height: 22px;
+        width: 22px;
+        top: 8px;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
