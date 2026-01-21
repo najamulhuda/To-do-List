@@ -172,7 +172,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/najamulhuda)
+- GitHub: [@najamulhuda](https://github.com/najamulhuda)
 
 ## Acknowledgments
 
